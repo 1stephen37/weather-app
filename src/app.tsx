@@ -2,7 +2,6 @@ import {useState, useRef} from 'preact/hooks'
 import './app.css';
 import {FaSearch, FaWind} from "react-icons/fa";
 import {FaLocationDot} from "react-icons/fa6";
-import {Button} from "./components/ui/button.tsx";
 import {IoIosWater} from "react-icons/io";
 
 const apiKey = '33e60c221957de57c23d39455521b5c2';
@@ -137,11 +136,11 @@ export function App() {
                         setSearch(target.value);
                     }} ref={input}
                            class="w-full outline-0 pr-[45px] focus:border-[rgba(0,0,0,0.15)] font-medium transition-all duration-[0.2s] text-[rgba(255,255,255,0.75)] bg-[rgba(0,0,0,0.15)] px-4 py-[10px] rounded-full border-[3px] border-transparent"/>
-                    <div className="absolute right-2 top-1/2 -translate-y-1/2">
-                        <Button variant={'outline'} type={'submit'}
+                    <div className="absolute right-4 top-1/2 -translate-y-1/2">
+                        <button type={'submit'}
                                 className="bg-transparent flex border-none cursor-pointer">
                             <FaSearch class={'text-[rgba(255,255,255,0.75)]'}/>
-                        </Button>
+                        </button>
                     </div>
                 </form>
                 {!isSearching && !isNotFound && (
