@@ -114,4 +114,25 @@
   body {
     @apply bg-background text-foreground;
   }
+  * {
+    @apply font-[600] leading-[1.25]
+  }
+}
+
+.regular-txt {
+  @apply font-[400]
+}
+
+.forecast-items-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.forecast-items-container::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+  border-radius: 99px;
+}
+
+.forecast-items-container::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.7);
+  border-radius: 99px;
 }
